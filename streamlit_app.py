@@ -15,7 +15,7 @@ df2 = pd.read_csv('digest_descriptives_merged_highschool_bestversionL6V2.csv')
 tab1, tab2 = st.tabs(["All Sections", "Search"])
 
 with tab1:
-    fig = px.scatter(df1, x='section_number', y='flesch_kincaid_grade', title="All Sections Readability")
+    fig = px.scatter(df1, x='section_number', y='flesch_kincaid_grade', title="All Sections Readability",  height = 1000)
     fig.update_layout(xaxis_title='',margin_b=400, margin_l = 40, margin_r=10, margin_t=50)
     st.plotly_chart(fig, theme=None, use_container_width=True)
 
