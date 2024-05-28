@@ -26,6 +26,6 @@ with tab2:
         section = df1.loc[df1['section_number']==user_input]
         section = section[['section_text', 'flesch_kincaid_grade', 'gunning_fog', 'sentence_length_mean']]
         simple_section = df2.loc[df2['section_number']==user_input]
-        simple_section = simple_section[['simplified_text', 'flesch_kincaid_grade', 'gunning_fog', 'sentence_length_mean']]
+        simple_section = simple_section[['simplified_text', 'flesch_kincaid_grade', 'gunning_fog', 'sentence_length_mean', 'score']]
         st.table(section)
         st.table(simple_section)
