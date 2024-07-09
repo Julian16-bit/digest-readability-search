@@ -20,7 +20,7 @@ with tab1:
     st.plotly_chart(fig, theme=None, use_container_width=True)
 
 with tab2:
-    user_input = st.text_input("", placeholder="🔍 Search for a section number (use exact section number, i.e. 9.6.2)", label_visibility="collapsed")
+    user_input = st.text_input("", placeholder="🔍 Search for a section number (use exact section, i.e. 9.6.2)", label_visibility="collapsed")
     
     if user_input:
         section = df1.loc[df1['section_number']==user_input]
